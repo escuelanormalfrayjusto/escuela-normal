@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta enviada | Escuela Normal Superior Fray Justo Santa María de Oro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+  <main class="container text-center py-5">
+    <div class="mx-auto p-4 p-md-5 bg-white border rounded shadow-sm" style="max-width: 520px;">
+      <h1 class="h3 fw-bold mb-3">¡Consulta enviada!</h1>
+      <p class="mb-4">
+        Redirigiendo a Contacto en <span id="cuenta" class="fw-bold">3</span>...
+      </p>
+      <a href="contacto.html" class="btn btn-dark">Volver ahora a Contacto</a>
+    </div>
+  </main>
+
+  <script>
+    let segundos = 3;
+    const spanCuenta = document.getElementById("cuenta");
+
+    const intervalo = setInterval(() => {
+      segundos--;
+      if (segundos > 0) {
+        spanCuenta.textContent = segundos;
+      } else {
+        clearInterval(intervalo);
+        window.location.href = "contacto.html";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

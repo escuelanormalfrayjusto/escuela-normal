@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promociones | Galería | Escuela Normal Superior Fray Justo Santa María de Oro</title>
+  <meta name="description" content="Fotografías de promociones y egresados de la Escuela Normal Superior Fray Justo Santa María de Oro.">
+  <meta name="theme-color" content="#0a192f">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable saltar_contenido" href="#contenido">Saltar al contenido</a>
+  <a href="index.html" class="boton_inicio_flotante" aria-label="Volver al inicio" title="Volver al inicio"><i class="fas fa-house" aria-hidden="true"></i></a>
+
+  <header class="encabezado">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="d-flex align-items-center text-decoration-none">
+        <img src="assets/img/logo-header.png" alt="Logo de la Escuela Normal Superior" width="103" height="65" class="me-3">
+        <div class="text-white">
+          <span class="d-block text-uppercase small">Escuela Normal Superior</span>
+          <p class="encabezado_nombre mb-0 fw-bold">Fray Justo Santa María de Oro</p>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <nav class="sub_navegacion navbar navbar-expand-lg" aria-label="Menú principal">
+    <div class="container">
+      <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#menu_navegacion" aria-controls="menu_navegacion" aria-expanded="false" aria-label="Abrir o cerrar el menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu_navegacion">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="institucion.html">INSTITUCIÓN</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#niveles">NIVELES</a></li>
+          <li class="nav-item"><a class="nav-link" href="propuesta-educativa.html">PROPUESTA EDUCATIVA</a></li>
+          <li class="nav-item"><a class="nav-link" href="noticias.html">NOTICIAS</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="galeria.html">GALERÍA</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido">
+    <section class="hero_interior">
+      <div class="container">
+        <span>GALERÍA</span>
+        <h1>Promociones</h1>
+        <p>Recuerdos y registros de las cohortes que pasaron por la escuela.</p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2 mb-4">
+          <a href="galeria.html" class="btn btn-outline-secondary btn-sm align-self-start">
+            <i class="fas fa-arrow-left me-1" aria-hidden="true"></i> Volver a categorías
+          </a>
+          <span class="text-muted small">Tocá o hacé clic en una foto para verla ampliada</span>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4" id="grilla-promociones">
+          <!-- FOTO 1 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_1.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_1.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 2 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_2.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_2.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 3 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_3.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_3.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 4 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_4.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_4.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 5 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_5.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_5.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 6 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_6.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_6.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 7 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_7.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_7.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 8 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_8.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_8.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 9 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_9.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_9.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 10 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_10.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_10.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 11 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_11.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_11.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 12 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_12.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_12.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 13 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_13.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_13.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 14 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_14.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_14.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 15 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_15.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_15.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 16 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_16.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_16.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 17 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_17.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_17.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 18 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_18.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_18.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 19 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_19.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_19.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 20 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_20.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_20.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 21 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_21.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_21.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 22 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_22.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_22.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 23 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_23.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_23.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 24 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_24.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_24.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 25 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_25.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_25.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 26 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_26.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_26.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 27 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_27.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_27.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 28 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_28.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_28.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 29 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_29.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_29.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 30 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_30.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_30.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 31 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_31.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_31.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 32 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_32.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_32.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 33 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_33.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_33.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 34 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_34.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_34.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOTO 35 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border rounded-3 overflow-hidden galeria_card">
+              <button type="button" class="p-0 border-0 bg-transparent text-start w-100 galeria_trigger"
+                      data-bs-toggle="modal" data-bs-target="#visorFoto"
+                      data-img="assets/img/Galeria/Promociones/promo_35.jpg"
+                      data-titulo="Recuerdo de promoción">
+                <div class="ratio ratio-4x3 bg-light">
+                  <img src="assets/img/Galeria/Promociones/promo_35.jpg" alt="Recuerdo de promoción" class="w-100 h-100 galeria_img" loading="lazy">
+                </div>
+              </button>
+              <div class="card-body py-2 px-3 bg-white">
+                <p class="card-text small fw-semibold mb-0 text-dark">Recuerdo de promoción</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ARCHIVO EN GOOGLE DRIVE PARA SUMAR MÁS FOTOS -->
+        <div class="card mt-5 border rounded-3 bg-light shadow-sm">
+          <div class="card-body p-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+            <div>
+              <h2 class="h6 mb-1 fw-bold text-dark">
+                <i class="fab fa-google-drive me-2" aria-hidden="true"></i>Archivo fotográfico de promociones
+              </h2>
+              <p class="small mb-0 text-muted">¿Tenés más fotos o querés sumar nuevos recuerdos? Accedé a la carpeta compartida de Google Drive para consultar o incorporar fotografías. También podés ver más en nuestra página de Facebook (encontrás el enlace en el pie de página).</p>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1JgBH8GtZ-_IyU_gMGQ30HaVj7pJvw7kO" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-sm flex-shrink-0">
+              <i class="fas fa-folder-open me-1" aria-hidden="true"></i> Abrir archivo en Drive
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL VISOR CON NAVEGACIÓN -->
+  <div class="modal fade" id="visorFoto" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-6 mb-0" id="visorFotoTitulo"></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center justify-content-center bg-light">
+          <img src="" alt="" id="visorFotoImg" class="img-fluid rounded">
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-outline-dark btn-sm" id="btnFotoAnterior">
+            <i class="fas fa-chevron-left me-1" aria-hidden="true"></i> Anterior
+          </button>
+          <span class="small text-muted" id="visorFotoContador"></span>
+          <button type="button" class="btn btn-outline-dark btn-sm" id="btnFotoSiguiente">
+            Siguiente <i class="fas fa-chevron-right ms-1" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer_nuevo">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5 col-md-6">
+          <p class="footer_titulo footer_contacto_titulo">Contacto</p>
+          <ul class="footer_contacto_lista">
+            <li>
+              <span class="d-inline-flex align-items-start gap-2">
+                <i class="fas fa-location-dot mt-1" aria-hidden="true"></i>
+                <a href="https://maps.app.goo.gl/g1UXDKbbDVMKREPTA?g_st=ac"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  Calle Rivadavia Nº 858, entre calles Aberastain y General Paz. San José de Jáchal, San Juan
+                </a>
+              </span>
+            </li>
+            <li>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:escuelanormalfrayjusto.jachal@gmail.com">escuelanormalfrayjusto.jachal@gmail.com</a>
+            </li>
+            
+            <li>
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              <a href="https://www.facebook.com/share/1CQQQZDday/" target="_blank" rel="noopener noreferrer">Seguinos en Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="mb-0 small">© 2026 Escuela Normal Superior Fray Justo Santa María de Oro · Sitio web institucional</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const disparadores = Array.from(document.querySelectorAll('#grilla-promociones .galeria_trigger'));
+    const visor = document.getElementById('visorFoto');
+    const visorImg = document.getElementById('visorFotoImg');
+    const visorTitulo = document.getElementById('visorFotoTitulo');
+    const visorContador = document.getElementById('visorFotoContador');
+    let indiceActual = 0;
+
+    function mostrarFoto(indice) {
+      indiceActual = (indice + disparadores.length) % disparadores.length;
+      const item = disparadores[indiceActual];
+      visorImg.src = item.getAttribute('data-img');
+      visorImg.alt = item.getAttribute('data-titulo');
+      visorTitulo.textContent = item.getAttribute('data-titulo');
+      visorContador.textContent = `${indiceActual + 1} de ${disparadores.length}`;
+    }
+
+    visor.addEventListener('show.bs.modal', (event) => {
+      const idx = disparadores.indexOf(event.relatedTarget);
+      if (idx !== -1) mostrarFoto(idx);
+    });
+
+    document.getElementById('btnFotoAnterior').addEventListener('click', () => mostrarFoto(indiceActual - 1));
+    document.getElementById('btnFotoSiguiente').addEventListener('click', () => mostrarFoto(indiceActual + 1));
+  </script>
+</body>
+</html>
+

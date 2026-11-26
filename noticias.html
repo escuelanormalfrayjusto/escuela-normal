@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias | Escuela Normal Superior Fray Justo Santa María de Oro</title>
+  <meta name="description" content="Noticias y novedades de la Escuela Normal Superior Fray Justo Santa María de Oro de Jáchal.">
+  <meta name="theme-color" content="#0a192f">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Escuela Normal Superior Fray Justo Santa María de Oro">
+  <meta property="og:title" content="Noticias | Escuela Normal Superior Fray Justo Santa María de Oro">
+  <meta property="og:description" content="Noticias y novedades de la Escuela Normal Superior Fray Justo Santa María de Oro de Jáchal.">
+  <meta property="og:locale" content="es_AR">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable saltar_contenido" href="#contenido">Saltar al contenido</a>
+
+  <a href="index.html" class="boton_inicio_flotante" aria-label="Volver al inicio" title="Volver al inicio"><i class="fas fa-house" aria-hidden="true"></i></a>
+
+  <!-- ========== ENCABEZADO ========== -->
+  <header class="encabezado">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="d-flex align-items-center text-decoration-none">
+        <img src="assets/img/logo-header.png" alt="Logo de la Escuela Normal Superior" width="103" height="65" class="me-3">
+        <div class="text-white">
+          <span class="d-block text-uppercase small">Escuela Normal Superior</span>
+          <p class="encabezado_nombre mb-0 fw-bold">Fray Justo Santa María de Oro</p>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <!-- ========== MENÚ DE NAVEGACIÓN ========== -->
+  <nav class="sub_navegacion navbar navbar-expand-lg" aria-label="Menú principal">
+    <div class="container">
+      <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#menu_navegacion" aria-controls="menu_navegacion" aria-expanded="false" aria-label="Abrir o cerrar el menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu_navegacion">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="institucion.html">INSTITUCIÓN</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#niveles">NIVELES</a></li>
+          <li class="nav-item"><a class="nav-link" href="propuesta-educativa.html">PROPUESTA EDUCATIVA</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="noticias.html">NOTICIAS</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">GALERÍA</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido">
+    <section class="hero_interior">
+      <div class="container">
+        <span>COMUNIDAD EDUCATIVA</span>
+        <h1>Noticias y Novedades</h1>
+        <p>Un espacio para compartir las actividades y acontecimientos de la institución.</p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <!-- Mensaje cuando todavía no hay noticias cargadas -->
+        <div class="text-center py-5 border rounded-3 bg-light" id="estado-sin-noticias">
+          <p class="mb-1 fw-semibold text-dark">Aún no hay noticias publicadas.</p>
+          <p class="small text-muted mb-0">Las novedades institucionales aparecerán aquí a medida que se carguen.</p>
+        </div>
+
+        <!-- Grilla dinámica -->
+        <div class="row g-4 d-none" id="contenedor-noticias">
+          <div class="col-lg-7" id="columna-principal">
+            <article class="noticia_grande" id="noticia-principal">
+              <img src="" alt="" width="1408" height="768" loading="lazy" id="noticia-principal-img" class="d-none">
+              <div class="p-4">
+                <span class="fecha_noticia" id="noticia-principal-fecha"></span>
+                <h2 id="noticia-principal-titulo"></h2>
+                <p id="noticia-principal-texto" style="white-space: pre-line;"></p>
+                <small class="d-block text-muted mt-3 d-none" id="noticia-principal-autor"></small>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-5 d-none" id="columna-secundarias">
+            <div class="lista_noticias" id="lista-noticias-secundarias"></div>
+
+            <div class="mt-3 d-none" id="contenedor-ver-mas">
+              <button type="button" class="btn btn-outline-dark btn-sm w-100" id="btn-ver-mas-noticias">
+                Ver más noticias
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL PARA LEER NOTICIA COMPLETA -->
+  <div class="modal fade" id="modalNoticia" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="small text-uppercase text-muted d-block" id="modalNoticiaMeta"></span>
+            <h2 class="modal-title fs-5 mb-0" id="modalNoticiaTitulo"></h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="" alt="" id="modalNoticiaImg" class="img-fluid rounded mb-3 w-100 d-none" style="max-height: 360px; object-fit: cover;">
+          <p id="modalNoticiaTexto" class="mb-0" style="white-space: pre-line;"></p>
+          <small class="d-block text-muted mt-3 d-none" id="modalNoticiaAutor"></small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PIE DE PÁGINA ========== -->
+  <footer class="footer_nuevo">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5 col-md-6">
+          <p class="footer_titulo footer_contacto_titulo">Contacto</p>
+          <ul class="footer_contacto_lista">
+            <li>
+              <span class="d-inline-flex align-items-start gap-2">
+                <i class="fas fa-location-dot mt-1" aria-hidden="true"></i>
+                <a href="https://maps.app.goo.gl/g1UXDKbbDVMKREPTA?g_st=ac"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  Calle Rivadavia Nº 858, entre calles Aberastain y General Paz. San José de Jáchal, San Juan
+                </a>
+              </span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:escuelanormalfrayjusto.jachal@gmail.com">
+                escuelanormalfrayjusto.jachal@gmail.com
+              </a>
+            </li>
+            
+            <li>
+              <i class="fab fa-facebook-f"></i>
+              <a href="https://www.facebook.com/share/1CQQQZDday/"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                Seguinos en Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="mb-0 small">© 2026 Escuela Normal Superior Fray Justo Santa María de Oro · Sitio web institucional</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const URL_CSV_GOOGLE_SHEETS = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTrj4TKfItuw1ptEJjjidigzdpLnTeYaGrIrMj4tVdeT1rY6T4CPMpCfYqGIlz5Xu5NShoTgP6EvyQ3/pub?gid=0&single=true&output=csv";
+    const LIMITE_SECUNDARIAS_INICIAL = 4;
+    const LARGO_CORTE_TARJETA = 220;
+
+    let noticiasCargadas = [];
+    let mostrarTodas = false;
+
+    function parsearCSV(texto) {
+      const filas = [];
+      let filaActual = [];
+      let valorActual = "";
+      let entreComillas = false;
+
+      for (let i = 0; i < texto.length; i++) {
+        const char = texto[i];
+        const siguiente = texto[i + 1];
+
+        if (char === '"' && entreComillas && siguiente === '"') {
+          valorActual += '"';
+          i++;
+        } else if (char === '"') {
+          entreComillas = !entreComillas;
+        } else if (char === "," && !entreComillas) {
+          filaActual.push(valorActual.trim());
+          valorActual = "";
+        } else if ((char === "\n" || char === "\r") && !entreComillas) {
+          if (char === "\r" && siguiente === "\n") i++;
+          filaActual.push(valorActual.trim());
+          if (filaActual.some((celda) => celda !== "")) {
+            filas.push(filaActual);
+          }
+          filaActual = [];
+          valorActual = "";
+        } else {
+          valorActual += char;
+        }
+      }
+
+      if (valorActual.length > 0 || filaActual.length > 0) {
+        filaActual.push(valorActual.trim());
+        if (filaActual.some((celda) => celda !== "")) {
+          filas.push(filaActual);
+        }
+      }
+
+      if (filas.length < 2) return [];
+
+      const encabezados = filas[0].map((h) => h.toLowerCase().trim());
+      return filas.slice(1).map((celdas) => {
+        const obj = {};
+        encabezados.forEach((enc, idx) => {
+          obj[enc] = celdas[idx] || "";
+        });
+        return obj;
+      });
+    }
+
+    function obtenerAutor(item) {
+      return (item.autor || item.publicado_por || "").trim();
+    }
+
+    function configurarAutor(el, autor) {
+      if (!autor) {
+        el.textContent = "";
+        el.classList.add("d-none");
+        return;
+      }
+      el.textContent = `Publicado por: ${autor}`;
+      el.classList.remove("d-none");
+    }
+
+    function ordenarPorFechaDesc(lista) {
+      const conIso = lista.every((item) => /^\d{4}-\d{2}-\d{2}$/.test(item.fecha || ""));
+      if (!conIso) return lista;
+      return [...lista].sort((a, b) => (b.fecha || "").localeCompare(a.fecha || ""));
+    }
+
+    function formatearEtiquetaFecha(fechaStr) {
+      if (!fechaStr) return "";
+      const match = fechaStr.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+      if (match) {
+        return `${match[3]}/${match[2]}/${match[1]}`;
+      }
+      return fechaStr;
+    }
+
+    function configurarImagen(imgEl, ruta, altTexto) {
+      if (!ruta) {
+        imgEl.removeAttribute("src");
+        imgEl.classList.add("d-none");
+        return;
+      }
+
+      imgEl.onload = () => {
+        imgEl.classList.remove("d-none");
+      };
+      imgEl.onerror = () => {
+        imgEl.removeAttribute("src");
+        imgEl.classList.add("d-none");
+      };
+      imgEl.alt = altTexto || "Imagen de la noticia";
+      imgEl.src = ruta;
+    }
+
+    function abrirModalNoticia(item) {
+      const meta = [formatearEtiquetaFecha(item.fecha), item.categoria].filter(Boolean).join(" · ");
+      document.getElementById("modalNoticiaMeta").textContent = meta || "NOVEDAD INSTITUCIONAL";
+      document.getElementById("modalNoticiaTitulo").textContent = item.titulo || "Novedad";
+      document.getElementById("modalNoticiaTexto").textContent = item.texto || item.resumen || "";
+      configurarAutor(document.getElementById("modalNoticiaAutor"), obtenerAutor(item));
+
+      const imgModal = document.getElementById("modalNoticiaImg");
+      configurarImagen(imgModal, item.imagen, item.titulo);
+
+      const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById("modalNoticia"));
+      modal.show();
+    }
+
+    function renderizarNoticias() {
+      const estadoVacio = document.getElementById("estado-sin-noticias");
+      const contenedorNoticias = document.getElementById("contenedor-noticias");
+
+      if (!noticiasCargadas.length) {
+        estadoVacio.classList.remove("d-none");
+        contenedorNoticias.classList.add("d-none");
+        return;
+      }
+
+      estadoVacio.classList.add("d-none");
+      contenedorNoticias.classList.remove("d-none");
+
+      const ordenadas = ordenarPorFechaDesc(noticiasCargadas);
+      const principal = ordenadas[0];
+
+      const imgPrincipal = document.getElementById("noticia-principal-img");
+      const fechaPrincipal = document.getElementById("noticia-principal-fecha");
+      const tituloPrincipal = document.getElementById("noticia-principal-titulo");
+      const textoPrincipal = document.getElementById("noticia-principal-texto");
+      const autorPrincipal = document.getElementById("noticia-principal-autor");
+
+      configurarImagen(imgPrincipal, principal.imagen, principal.titulo);
+
+      const fechaFormateadaPrincipal = formatearEtiquetaFecha(principal.fecha);
+      fechaPrincipal.textContent = [fechaFormateadaPrincipal, principal.categoria]
+        .filter(Boolean)
+        .join(" · ") || "NOVEDADES";
+
+      tituloPrincipal.textContent = principal.titulo || "Novedad institucional";
+      textoPrincipal.textContent = principal.texto || principal.resumen || "";
+      configurarAutor(autorPrincipal, obtenerAutor(principal));
+
+      const todasSecundarias = ordenadas.slice(1);
+      const colPrincipal = document.getElementById("columna-principal");
+      const colSecundarias = document.getElementById("columna-secundarias");
+      const listaSecundarias = document.getElementById("lista-noticias-secundarias");
+      const contenedorVerMas = document.getElementById("contenedor-ver-mas");
+      const btnVerMas = document.getElementById("btn-ver-mas-noticias");
+
+      if (todasSecundarias.length === 0) {
+        colPrincipal.className = "col-lg-8 mx-auto";
+        colSecundarias.classList.add("d-none");
+        return;
+      }
+
+      colPrincipal.className = "col-lg-7";
+      colSecundarias.classList.remove("d-none");
+
+      const visibles = mostrarTodas
+        ? todasSecundarias
+        : todasSecundarias.slice(0, LIMITE_SECUNDARIAS_INICIAL);
+
+      listaSecundarias.innerHTML = "";
+      visibles.forEach((item) => {
+        const bloque = document.createElement("div");
+
+        const fechaTxt = formatearEtiquetaFecha(item.fecha);
+        if (fechaTxt) {
+          const fechaEl = document.createElement("small");
+          fechaEl.className = "d-block text-muted mb-1";
+          fechaEl.textContent = fechaTxt;
+          bloque.appendChild(fechaEl);
+        }
+
+        const etiqueta = document.createElement("span");
+        etiqueta.textContent = item.categoria || "INSTITUCIONAL";
+
+        const titulo = document.createElement("h3");
+        titulo.textContent = item.titulo || "Novedad";
+
+        const cuerpoCompleto = item.texto || item.resumen || "";
+        const esLarga = cuerpoCompleto.length > LARGO_CORTE_TARJETA;
+
+        const parrafo = document.createElement("p");
+        parrafo.textContent = esLarga
+          ? `${cuerpoCompleto.slice(0, LARGO_CORTE_TARJETA).trim()}...`
+          : cuerpoCompleto;
+
+        bloque.appendChild(etiqueta);
+        bloque.appendChild(titulo);
+        bloque.appendChild(parrafo);
+
+        if (esLarga) {
+          const btnLeer = document.createElement("button");
+          btnLeer.type = "button";
+          btnLeer.className = "btn btn-link btn-sm p-0 text-decoration-none fw-semibold d-block mb-1";
+          btnLeer.textContent = "Leer noticia completa";
+          btnLeer.addEventListener("click", () => abrirModalNoticia(item));
+          bloque.appendChild(btnLeer);
+        }
+
+        const autorTxt = obtenerAutor(item);
+        if (autorTxt) {
+          const autorEl = document.createElement("small");
+          autorEl.className = "d-block text-muted mt-1";
+          autorEl.textContent = `Publicado por: ${autorTxt}`;
+          bloque.appendChild(autorEl);
+        }
+
+        listaSecundarias.appendChild(bloque);
+      });
+
+      if (todasSecundarias.length > LIMITE_SECUNDARIAS_INICIAL) {
+        contenedorVerMas.classList.remove("d-none");
+        btnVerMas.textContent = mostrarTodas
+          ? "Ver menos noticias"
+          : `Ver más noticias (${todasSecundarias.length - LIMITE_SECUNDARIAS_INICIAL} más)`;
+      } else {
+        contenedorVerMas.classList.add("d-none");
+      }
+    }
+
+    async function cargarNoticiasDesdeSheets() {
+      if (!URL_CSV_GOOGLE_SHEETS || URL_CSV_GOOGLE_SHEETS === "URL_CSV_GOOGLE_SHEETS_AQUI") {
+        return;
+      }
+
+      try {
+        const respuesta = await fetch(URL_CSV_GOOGLE_SHEETS, { cache: "no-store" });
+        if (!respuesta.ok) return;
+
+        const csvTexto = await respuesta.text();
+        noticiasCargadas = parsearCSV(csvTexto).filter((n) => n.titulo || n.texto || n.resumen);
+        renderizarNoticias();
+      } catch (error) {
+        console.warn("No se pudieron cargar las noticias desde Google Sheets:", error);
+      }
+    }
+
+    document.getElementById("btn-ver-mas-noticias").addEventListener("click", () => {
+      mostrarTodas = !mostrarTodas;
+      renderizarNoticias();
+    });
+
+    cargarNoticiasDesdeSheets();
+  </script>
+</body>
+</html>
